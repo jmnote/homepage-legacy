@@ -5,39 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jmnote</title>
-  <meta name="description" content="Jmnote — Cloud Engineer building tools and documenting what I learn.">
+  <meta name="description" content="Jmnote — Cloud Engineer building tools and documenting what I learn." data-en-content="Jmnote — Cloud Engineer building tools and documenting what I learn." data-ko-content="Jmnote — 도구를 만들고 배운 것을 기록하는 Cloud Engineer입니다.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Jmnote">
   <meta property="og:title" content="Jmnote">
-  <meta property="og:description" content="Cloud Engineer building tools and documenting what I learn.">
+  <meta property="og:description" content="Cloud Engineer building tools and documenting what I learn." data-en-content="Cloud Engineer building tools and documenting what I learn." data-ko-content="도구를 만들고 배운 것을 기록하는 Cloud Engineer입니다.">
   <meta property="og:image" content="https://github.com/jmnote.png?size=512">
   <meta property="og:url" content="https://jmnote.com/">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale" content="en_US" data-en-content="en_US" data-ko-content="ko_KR">
+  <meta property="og:locale:alternate" content="ko_KR" data-en-content="ko_KR" data-ko-content="en_US">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Jmnote">
-  <meta name="twitter:description" content="Cloud Engineer building tools and documenting what I learn.">
+  <meta name="twitter:description" content="Cloud Engineer building tools and documenting what I learn." data-en-content="Cloud Engineer building tools and documenting what I learn." data-ko-content="도구를 만들고 배운 것을 기록하는 Cloud Engineer입니다.">
   <meta name="twitter:image" content="https://github.com/jmnote.png?size=512">
   <link rel="canonical" href="https://jmnote.com/">
   <link rel="icon" href="https://github.com/jmnote.png" type="image/png">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/language.js"></script>
   <script src="assets/theme.js"></script>
 </head>
 
 <body>
   <div class="container">
     <header class="site-header">
-      <nav class="site-nav" aria-label="Site">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/slides/">Slides</a>
+      <nav class="site-nav" aria-label="Site" data-en-aria-label="Site" data-ko-aria-label="사이트">
+        <a href="/" aria-current="page" data-en="Home" data-ko="홈" data-language-nav="">Home</a>
+        <a href="/slides/" data-en="Slides" data-ko="슬라이드" data-language-nav="">Slides</a>
       </nav>
       <div class="site-controls">
-        <div class="lang-switch">
-          <span class="active">English</span>
-          <span class="sep">/</span>
-          <a href="/ko/">한국어</a>
-        </div>
-        <button id="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
+        <div class="lang-switch"><a data-language="en" href="?lang=en">English</a><span class="sep">/</span><a data-language="ko" href="?lang=ko">한국어</a></div>
+        <button id="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme" data-en-aria-label="Switch theme" data-en-title="Switch theme" data-ko-aria-label="테마 전환" data-ko-title="테마 전환">
           <img id="theme-icon" src="assets/sun.svg" alt="">
         </button>
       </div>
@@ -45,10 +42,10 @@
 
     <main>
       <section class="hero">
-        <img class="avatar" src="https://github.com/jmnote.png?size=160" alt="Jmnote's profile image">
+        <img class="avatar" src="https://github.com/jmnote.png?size=160" alt="Jmnote's profile image" data-en-alt="Jmnote's profile image" data-ko-alt="Jmnote 프로필 이미지">
         <div class="hero-bio">
-          <h1>Hi, I'm Jmnote</h1>
-          <p>Cloud Engineer building tools and documenting what I learn.</p>
+          <h1 data-en="Hi, I'm Jmnote" data-ko="안녕하세요, Jmnote입니다">Hi, I'm Jmnote</h1>
+          <p data-en="Cloud Engineer building tools and documenting what I learn." data-ko="도구를 만들고 배운 것을 기록하는 Cloud Engineer입니다.">Cloud Engineer building tools and documenting what I learn.</p>
         </div>
       </section>
 
@@ -59,16 +56,16 @@
         <div class="table-wrapper">
           <table>
             <thead>
-              <tr><th scope="col" class="col-repo">Repo</th><th scope="col" class="col-desc">Description</th></tr>
+              <tr><th scope="col" class="col-repo" data-en="Repo" data-ko="저장소">Repo</th><th scope="col" class="col-desc" data-en="Description" data-ko="설명">Description</th></tr>
             </thead>
             <tbody>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/ai-gauge">AI Gauge</a></td><td class="col-desc">Windows system tray widget for monitoring AI service usage.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/black-screen">Black Screen</a></td><td class="col-desc">Chrome extension for opening a pure black screen in a new tab.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMaps">SimpleMaps</a></td><td class="col-desc">MediaWiki extension for displaying interactive maps with Leaflet.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMarkdown">SimpleMarkdown</a></td><td class="col-desc">MediaWiki extension for rendering Markdown with marked and DOMPurify.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMathJax">SimpleMathJax</a></td><td class="col-desc">MediaWiki extension for rendering mathematical notation with MathJax.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMermaid">SimpleMermaid</a></td><td class="col-desc">MediaWiki extension for rendering diagrams with Mermaid.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/jmnote/slides">Slides</a></td><td class="col-desc">Slide decks from conference talks and public presentations.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/ai-gauge">AI Gauge</a></td><td class="col-desc" data-en="Windows system tray widget for monitoring AI service usage." data-ko="AI 서비스 사용량을 모니터링하는 Windows 시스템 트레이 위젯">Windows system tray widget for monitoring AI service usage.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/black-screen">Black Screen</a></td><td class="col-desc" data-en="Chrome extension for opening a pure black screen in a new tab." data-ko="새 탭에서 완전한 검은색 화면을 띄워주는 Chrome 확장 프로그램">Chrome extension for opening a pure black screen in a new tab.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMaps">SimpleMaps</a></td><td class="col-desc" data-en="MediaWiki extension for displaying interactive maps with Leaflet." data-ko="Leaflet 기반의 반응형 대화형 지도를 표시하는 미디어위키 확장">MediaWiki extension for displaying interactive maps with Leaflet.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMarkdown">SimpleMarkdown</a></td><td class="col-desc" data-en="MediaWiki extension for rendering Markdown with marked and DOMPurify." data-ko="marked와 DOMPurify를 활용한 미디어위키 마크다운 렌더러 확장">MediaWiki extension for rendering Markdown with marked and DOMPurify.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMathJax">SimpleMathJax</a></td><td class="col-desc" data-en="MediaWiki extension for rendering mathematical notation with MathJax." data-ko="MathJax를 활용하여 수학 기호와 수식을 렌더링하는 미디어위키 확장">MediaWiki extension for rendering mathematical notation with MathJax.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/SimpleMermaid">SimpleMermaid</a></td><td class="col-desc" data-en="MediaWiki extension for rendering diagrams with Mermaid." data-ko="Mermaid 다이어그램을 지원하는 미디어위키 확장">MediaWiki extension for rendering diagrams with Mermaid.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/jmnote/slides">Slides</a></td><td class="col-desc" data-en="Slide decks from conference talks and public presentations." data-ko="컨퍼런스 발표 및 공개 세미나 슬라이드 아카이브">Slide decks from conference talks and public presentations.</td></tr>
             </tbody>
           </table>
         </div>
@@ -77,12 +74,12 @@
         <div class="table-wrapper">
           <table>
             <thead>
-              <tr><th scope="col" class="col-repo">Repo</th><th scope="col" class="col-desc">Description</th></tr>
+              <tr><th scope="col" class="col-repo" data-en="Repo" data-ko="저장소">Repo</th><th scope="col" class="col-desc" data-en="Description" data-ko="설명">Description</th></tr>
             </thead>
             <tbody>
-              <tr><td class="col-repo"><a href="https://github.com/mailapi/mailapi">Mail API</a></td><td class="col-desc">Vendor-neutral API specification for sending and receiving email.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/mailapi/mediawiki-extensions-MailAPI">MailAPI MediaWiki Extension</a></td><td class="col-desc">MediaWiki integration for the Mail API.</td></tr>
-              <tr><td class="col-repo"><a href="https://github.com/mailapi/resend-mailer">Resend Mailer</a></td><td class="col-desc">Receives Mail API message requests and forwards them to Resend.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/mailapi/mailapi">Mail API</a></td><td class="col-desc" data-en="Vendor-neutral API specification for sending and receiving email." data-ko="이메일 발신 및 수신을 위한 벤더 중립적 표준 API 규격">Vendor-neutral API specification for sending and receiving email.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/mailapi/mediawiki-extensions-MailAPI">MailAPI MediaWiki Extension</a></td><td class="col-desc" data-en="MediaWiki integration for the Mail API." data-ko="Mail API를 미디어위키와 연동하는 통합 확장">MediaWiki integration for the Mail API.</td></tr>
+              <tr><td class="col-repo"><a href="https://github.com/mailapi/resend-mailer">Resend Mailer</a></td><td class="col-desc" data-en="Receives Mail API message requests and forwards them to Resend." data-ko="Mail API 요청을 수신하여 Resend 서비스로 전달하는 발송 에이전트">Receives Mail API message requests and forwards them to Resend.</td></tr>
             </tbody>
           </table>
         </div>

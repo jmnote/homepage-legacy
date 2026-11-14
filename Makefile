@@ -2,7 +2,6 @@
 
 checks:
 	./scripts/check-repo-order.sh index.html
-	./scripts/check-repo-order.sh ko/index.html
 	npx --yes markdownlint-cli2 '**/*.md'
 	npx --yes html-validate index.html ko/index.html
 	npx --yes stylelint 'assets/**/*.css'
