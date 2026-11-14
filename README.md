@@ -58,3 +58,15 @@ alphabetical Repo ordering. Run `make checks` locally to run the same checks.
 ## License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
+
+## Language selection
+
+The homepage uses one URL for English and Korean. Selection order is
+`?lang=ko|en`, saved choice (`localStorage` key `jmnote.language`), browser
+language preferences, then English. Automatic selection leaves the URL unchanged.
+Language links preserve other query parameters and the fragment. Explicit choices
+are saved and shared with `/slides/` on the same origin. The legacy `/ko/` page
+redirects to `/?lang=ko`.
+
+`assets/language.js` also lives in the slides repository under
+`tooling/site/assets/`. Keep the selection policy and storage key synchronized.
